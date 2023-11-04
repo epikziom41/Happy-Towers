@@ -8,6 +8,10 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #222; /* Ciemne tło */
+            color: #fff; /* Biały tekst */
+            margin: 0;
+            padding: 0;
         }
 
         header {
@@ -20,7 +24,7 @@
         }
 
         #buttons {
-            margin-top: 20px;
+            margin-top: 50px;
         }
 
         .button {
@@ -32,10 +36,21 @@
             text-decoration: none;
             border: none;
             cursor: pointer;
+            transition: background-color 0.3s; /* Animacja zmiany koloru */
         }
 
         .button:hover {
             background-color: #005cbf;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -46,18 +61,11 @@
 
     <div id="buttons">
         <a class="button" href="https://github.com/epikziom41/Happy-Towers/releases" target="_blank">Pobierz</a>
-        <button class="button" id="playButton">Zagraj</button>
     </div>
 
-    <p>Gra Happy Towers to zmodyfikowana wersja Flappy Birda. Stworzona przez epikziom34</p>
+    <p>Gra Happy Towers to zmodyfikowana wersja Flappy Birda. Stworzona przez epikziom34 Studio EpikGames.</p>
 
     <img src="plik1.png" alt="Screen 1">
     <img src="plik2.png" alt="Screen 2">
-
-    <script>
-        document.getElementById("playButton").addEventListener("click", function() {
-            window.location.href = "Game/index.html";
-        });
-    </script>
 </body>
 </html>
